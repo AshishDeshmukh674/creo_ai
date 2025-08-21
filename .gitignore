@@ -15,3 +15,14 @@ cpp/onnx_model/
 py/onnx_model/
 py/t5_creo_lora/
 py/t5_creo_merged/
+
+# Dataset and model directories
+py/ds_creo/
+py/onnx_model/
+py/t5_creo_lora/
+
+
+# Any onnx_model directory in any location
+**/onnx_model/
+**/ds_creo/
+**/t5_creo_lora/
