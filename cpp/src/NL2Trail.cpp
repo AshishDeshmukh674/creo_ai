@@ -13,6 +13,13 @@ NL2Trail::NL2Trail(const std::string& onnxPath, const std::string& spmPath,
       session_(nullptr),
       max_new_tokens_(maxNewTokens) {
 
+    // Configure ONNX Runtime for optimal performance
+    opts_.SetIntraOpNumThreads(4);                    // Use 4 CPU threads for parallel ops
+    opts_.SetInterOpNumThreads(1);                    // Single session thread
+    opts_.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_ALL);  // Maximum optimizations
+    opts_.EnableCpuMemArena();                        // Memory pooling for speed
+    opts_.EnableMemPattern();                         // Memory pattern optimization
+
     // Initialize session with proper API
     session_ = std::make_unique<Ort::Session>(env_, std::wstring(onnxPath.begin(), onnxPath.end()).c_str(), opts_);
 

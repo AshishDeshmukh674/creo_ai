@@ -13,9 +13,21 @@ onnxruntime>=1.20.0         # ONNX Runtime for optimized inference
 
 # PyTorch ecosystem
 torch>=2.2                  # Deep learning framework
-numpy>=1.24.0               # Numerical computing (compatible version)
+numpy>=1.24.0             
+  # Numerical computing (compatible version)
+
+# Voice input support
+SpeechRecognition>=3.10.0   # Speech-to-text conversion
+pydub>=0.25.0               # Audio processing library
+sounddevice>=0.4.4          # Audio input/output library
+
 
 # Optional: for better performance and compatibility
 protobuf>=3.20.0            # Protocol buffers for model serialization
 packaging                   # Version parsing utilities
 huggingface-hub>=0.16.0     # Model hub integration
+
+
+
+
+
