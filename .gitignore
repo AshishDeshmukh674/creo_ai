@@ -1,4 +1,4 @@
-.venv/
+creo_env/
 # Python cache and data
 __pycache__/
 *.pyc
