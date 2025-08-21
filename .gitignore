@@ -1,0 +1,17 @@
+.venv/
+# Python cache and data
+__pycache__/
+*.pyc
+
+# Model files and outputs
+*.onnx
+*.pt
+*.bin
+*.ckpt
+
+# C++ build and output folders
+cpp/build/
+cpp/onnx_model/
+py/onnx_model/
+py/t5_creo_lora/
+py/t5_creo_merged/
