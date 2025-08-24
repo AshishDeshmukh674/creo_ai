@@ -3,11 +3,12 @@
 
 ------------------------------------------------------------------------------------------------
 
-make virtual env:
-python -m venv venv
-
-activate it:
-.\venv\Scripts\Activate.ps1
+cd ..\..\py
+# Activate your environment if not already done
+# For conda environment (your setup):form main folder
+conda activate .\venv
+# OR if above doesn't work, try:
+# .\venv\python.exe -m pip install -r requirements.txt (direct usage)
 
 pip install -r requirements.txt
 -----------------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 # Core ML libraries for transformer training and inference
-transformers>=4.45.0        # HuggingFace transformers library for T5 model (compatible with numpy 2.x)
-datasets>=2.20.0            # Dataset loading and processing utilities
-accelerate>=0.32.1          # Distributed training acceleration library
-peft>=0.11.1                # Parameter-Efficient Fine-Tuning (LoRA) library
+transformers==4.42.4        # HuggingFace transformers library for T5 model
+datasets==2.20.0            # Dataset loading and processing utilities
+accelerate==0.32.1          # Distributed training acceleration library
+peft==0.11.1                # Parameter-Efficient Fine-Tuning (LoRA) library
 
 # Tokenization
 sentencepiece>=0.1.99       # Subword tokenization used by T5 models
@@ -13,7 +13,8 @@ onnxruntime>=1.20.0         # ONNX Runtime for optimized inference
 
 # PyTorch ecosystem
 torch>=2.2                  # Deep learning framework
-numpy>=2.1.0                # Numerical computing (compatible with Python 3.13)
+numpy>=1.24.0             
+  # Numerical computing (compatible version)
 
 # Voice input support
 SpeechRecognition>=3.10.0   # Speech-to-text conversion
