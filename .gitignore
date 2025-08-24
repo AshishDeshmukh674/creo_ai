@@ -26,3 +26,6 @@ py/t5_creo_lora/
 **/onnx_model/
 **/ds_creo/
 **/t5_creo_lora/
+
+
+/data
